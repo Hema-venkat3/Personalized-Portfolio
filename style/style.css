@@ -1,0 +1,257 @@
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* FIRST SECTION */
+.first_section {
+    background-color: #0C0404;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), rgb(34, 30, 30); */
+    color: white;
+}
+
+/* NAVBAR SECTION */
+.navbar_section a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+
+.navbar_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    padding: 20px 100px;
+}
+
+.navbar_section span {
+    font-size: 45px;
+    color: #FA0427FA;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navbar_section div {
+    font-size: 45px;
+}
+
+
+.navbar_section ul li {
+    list-style: none;
+    display: inline;
+    margin-left: 10px;
+    padding-top: 40px;
+}
+
+/* TOP SECTION */
+.top_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+}
+
+
+
+.top_left p {
+    color: rgb(197, 192, 192);
+    width: 420px;
+    line-height: 30px;
+    font-size: 25px;
+}
+
+.top_left input {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #FA0427FA;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.top_left input:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+.intro {
+    font-size: 25px;
+    color: rgb(197, 192, 192);
+}
+
+.role {
+    padding: 15px 0;
+}
+
+.top_left .role {
+    font-size: 45px;
+}
+
+.top_right img {
+    margin-top: -100px;
+}
+
+/* SECOND SECTION */
+.second_section {
+    background-color: rgb(34, 30, 30);
+    color: white;
+    justify-content: center;
+}
+
+/* ABOUT ME SECTION */
+.about_me {
+    padding: 15px;
+    padding-top: 80px;
+    text-align: center;
+}
+
+.about_me h2 {
+    color: #FA0427FA;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+
+.about_me p {
+    font-size: 16px;
+}
+
+.about_me span {
+    color: #FA0427FA;
+    /* font-size: 30px; */
+}
+
+/* FOOTER */
+.footer {
+    display: flex;
+    padding: 100px;
+    justify-content: space-between;
+}
+
+.footer_left img {
+    width: 390px;
+    height: 350px;
+}
+
+.footer_right {
+    display: flex;
+    flex-direction: column;
+    padding-left: 35px;
+}
+
+.footer_right .name {
+    font-size: 30px;
+    color: #FA0427FA;
+}
+
+.footer_right p {
+    line-height: 30px;
+}
+
+.footer_icons {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+
+.footer_icons span {
+    color: rgb(161, 156, 156);
+}
+
+.footer_icons img {
+    width: 20px;
+    height: 30px;
+}
+
+.left_icons {
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+}
+
+.left_icons div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.left_icons p {
+    padding: 0;
+}
+
+.right_icons {
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+}
+
+.right_icons div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.last_section {
+    text-align: center;
+    background-color: #0C0404;
+    color: white;
+    margin: 0;
+    padding: 5px;
+}
+
+.last_section span {
+    color: #FA0427FA;
+}
+
+/* MEDIA QURIES */
+@media screen and (max-width:600px) {
+    .first_section {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        font-size: 15px;
+    }
+
+    .navbar_section {
+        flex-direction: column;
+        width: 100%;
+        font-size: 30px;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .navbar_section ul li {
+        display: block;
+    }
+
+    .navbar_section span {
+        font-size: 30px;
+        color: #FA0427FA;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    /* TOP SECTION */
+    .top_section {
+        flex-direction: column;
+        width: 100%;
+        font-size: 20px;
+        /* padding: 25px; */
+    }
+
+    /* ABOUT ME SECTION */
+    .about_me {
+        padding: 5px;
+        padding-top: 40px;
+        text-align: center;
+    }
+
+    /* FOOTER */
+    .footer {
+        flex-direction: column;
+    }
+
+}
