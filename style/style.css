@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -35,6 +40,7 @@ html {
 
 .navbar_section div {
     font-size: 45px;
+    font-weight: 600;
 }
 
 
@@ -111,6 +117,7 @@ html {
     color: #FA0427FA;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 30px;
+    padding-bottom: 20px;
 }
 
 .about_me p {
@@ -125,8 +132,8 @@ html {
 /* FOOTER */
 .footer {
     display: flex;
-    padding: 100px;
-    justify-content: space-between;
+    padding: 120px;
+    padding: 50px;
 }
 
 .footer_left img {
@@ -137,7 +144,10 @@ html {
 .footer_right {
     display: flex;
     flex-direction: column;
-    padding-left: 35px;
+    margin-left: 150px;
+    padding-top: 90px;
+    width: 600px;
+    line-height: 25px;
 }
 
 .footer_right .name {
@@ -149,10 +159,22 @@ html {
     line-height: 30px;
 }
 
+.icons {
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 20px;
+    padding-left: 350px;
+}
+
 .footer_icons {
     display: flex;
     gap: 80px;
     align-items: center;
+}
+
+.footer_icons a {
+    text-decoration: none;
+    color: white;
 }
 
 .footer_icons span {
@@ -170,10 +192,15 @@ html {
     flex-direction: column;
 }
 
+.footer_icons a:hover {
+    color: #FA0427FA;
+}
+
 .left_icons div {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
+    margin-bottom: 10px;
 }
 
 .left_icons p {
@@ -190,6 +217,7 @@ html {
     display: flex;
     align-items: center;
     gap: 15px;
+    margin-bottom: 10px;
 }
 
 .last_section {
@@ -204,52 +232,78 @@ html {
     color: #FA0427FA;
 }
 
+.last_section span:hover {
+    color: white;
+}
+
 /* MEDIA QURIES */
 @media screen and (max-width:600px) {
-    .first_section {
-        width: 100%;
-        text-align: center;
-        align-items: center;
-        font-size: 15px;
+    html {
+        overflow-y: hidden;
+        height: 100vh;
+    }
+
+    .container {
+        height: auto;
     }
 
     .navbar_section {
         flex-direction: column;
-        width: 100%;
-        font-size: 30px;
-        text-align: center;
-        align-items: center;
-        align-content: center;
     }
 
-    .navbar_section ul li {
-        display: block;
+    .navbar_section div {
+        font-size: 30px;
     }
 
     .navbar_section span {
         font-size: 30px;
-        color: #FA0427FA;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 
-    /* TOP SECTION */
+    .navbar_section ul li {
+        padding-top: 20px;
+    }
+
+    .first_section {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        font-size: 10px;
+    }
+
     .top_section {
         flex-direction: column;
+        padding: 50px;
+    }
+
+    .top_left p {
         width: 100%;
-        font-size: 20px;
-        /* padding: 25px; */
+        line-height: 30px;
     }
 
-    /* ABOUT ME SECTION */
-    .about_me {
-        padding: 5px;
-        padding-top: 40px;
-        text-align: center;
+    .top_left .role {
+        font-size: 30px;
     }
 
-    /* FOOTER */
+    .top_right img {
+        margin-top: 35px;
+        width: 90%;
+    }
+
     .footer {
         flex-direction: column;
+        /* padding: 50px; */
+    }
+
+    .footer_left img {
+        width: 100%;
+        height: 150px;
+    }
+
+    .footer_right {
+        flex-direction: row;
+        text-align: center;
+        margin: 0;
+        width: 100%;
     }
 
 }
