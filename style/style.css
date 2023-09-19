@@ -5,7 +5,8 @@
 
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    overflow: hidden;
+    overflow-y: scroll;
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -334,7 +335,7 @@ html {
     }
 }
 
-@media screen and (min-width:2050px) {
+@media screen and (max-width:1050px) {
     body {
         width: 100%;
     }
