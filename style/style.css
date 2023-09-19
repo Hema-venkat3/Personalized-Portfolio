@@ -5,9 +5,9 @@
 
 html {
     scroll-behavior: smooth;
-    overflow: hidden;
-    overflow-y: scroll;
+    overflow-x: hidden;
     font-family: 'Courier New', Courier, monospace;
+    width: 100%;
 }
 
 /* FIRST SECTION */
@@ -62,7 +62,7 @@ html {
 
 .top_left p {
     color: rgb(197, 192, 192);
-    width: 420px;
+    /* width: 420px; */
     line-height: 30px;
     font-size: 25px;
 }
@@ -133,8 +133,8 @@ html {
 /* FOOTER */
 .footer {
     display: flex;
-    padding: 120px;
-    padding: 50px;
+    padding: 100px;
+    justify-content: space-between;
 }
 
 .footer_left img {
@@ -145,9 +145,9 @@ html {
 .footer_right {
     display: flex;
     flex-direction: column;
-    margin-left: 150px;
-    padding-top: 90px;
-    width: 600px;
+    gap: 50px;
+    align-items: center;
+    /* width: 600px; */
     line-height: 25px;
 }
 
@@ -160,19 +160,17 @@ html {
     line-height: 30px;
 }
 
-.icons {
-    margin-top: 0;
-    padding-top: 0;
-    padding-bottom: 20px;
-    padding-left: 350px;
 
+.icons {
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer_icons {
     display: flex;
-    gap: 80px;
+    gap: 50px;
     align-items: center;
-
 }
 
 .footer_icons a {
@@ -237,12 +235,13 @@ html {
 /* MEDIA QURIES */
 @media screen and (max-width:700px) {
     html {
-        overflow-y: hidden;
+        overflow-x: hidden;
         height: 100vh;
     }
 
     .container {
-        height: auto;
+        height: 100vh;
+        width: 100%;
     }
 
     .navbar_section {
@@ -274,8 +273,9 @@ html {
     }
 
     .top_left p {
-        width: 100%;
-        line-height: 30px;
+        width: 300px;
+        line-height: 40px;
+        font-size: 25px;
     }
 
     .top_left .role {
@@ -289,39 +289,31 @@ html {
 
     .about_me {
         text-align: center;
+
     }
 
     .footer {
         flex-direction: column;
-        /* padding: 50px; */
+        padding: 50px;
+        justify-content: space-between;
     }
 
     .footer_left img {
         width: 100%;
-        height: 150px;
+        height: 300px;
     }
 
-    .footer_right {
-        flex-direction: row;
-        text-align: center;
-        margin: 0;
-        width: 100%;
+    .footer_right p {
+        width: 300px;
     }
 
 
-    .icons {
-        margin-top: 0;
-        padding-top: 0;
-        padding-bottom: 10px;
-        padding-left: 10px;
-
-    }
+    .icons {}
 
     .footer_icons {
         gap: 2px;
-        display: block;
-        /* justify-content: center;
-        align-items: center; */
+        flex-direction: column;
+
     }
 
     .left_icons,
