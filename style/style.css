@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 html {
@@ -31,6 +32,7 @@ html {
     align-items: center;
     font-size: 25px;
     padding: 20px 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .navbar_section span {
@@ -100,11 +102,63 @@ html {
     margin-top: -100px;
 }
 
+/* 
+.top_right img:hover {
+    transform: scale(100px);
+    transition: all;
+    scale: 105px;
+} */
+
 /* SECOND SECTION */
 .second_section {
     background-color: rgb(34, 30, 30);
     color: white;
     justify-content: center;
+}
+
+.project_listing div{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+/* .project_listing p{
+    justify-content: center;
+
+} */
+.project_listing div a {
+    flex-direction: column;
+    text-decoration: none;
+    color: #FA0427FA;
+    line-height: 25px;
+    font-size: large;
+}
+
+.first_three {
+    align-items: flex-start;
+}
+
+.first_three a {
+
+
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.last_three {
+    align-items: flex-end;
+}
+
+.last_three a {
+
+    /* align-items: center;
+    justify-content: center; */
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+
+.project_listing a:hover {
+    color: white;
 }
 
 /* ABOUT ME SECTION */
@@ -221,7 +275,7 @@ html {
     background-color: #0C0404;
     color: white;
     margin: 0;
-    padding: 5px;
+    padding: 20px;
 }
 
 .last_section span {
@@ -230,6 +284,11 @@ html {
 
 .last_section span:hover {
     color: white;
+}
+
+.navbar_section ul li a:hover {
+    color: white;
+
 }
 
 /* MEDIA QURIES */
@@ -324,6 +383,7 @@ html {
 
     .last_section {
         text-align: center;
+        padding: 20px;
     }
 }
 
